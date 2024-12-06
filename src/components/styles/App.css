@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+    text-align: center;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    font-style: italic;
+    background-color: #F3E9D1;
+}
+
+
+

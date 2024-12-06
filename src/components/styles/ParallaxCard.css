@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 2rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container-card {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  transition: transform .6s 1s;
+  transform-origin: center;
+}
+
+.container-card::before, .container-card::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 2;
+  opacity: .3;
+  transition: .3s;
+}
+
+.container-card::before {
+  top: 2rem;
+  right: 2rem;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container-card::after {
+  bottom: 2rem;
+  left: 2rem;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container--active {
+  transition: none;
+}
+
+
+.container-card p {
+  color: #000;
+  font-size: 2.2rem;
+}
+
+.card:hover .container-card::before,
+.card:hover .container-card::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}

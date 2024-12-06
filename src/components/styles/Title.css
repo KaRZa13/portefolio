@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.green-rect {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: #98FB98;
+    height: 170px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 85%;
+    text-transform: uppercase;
+    margin: 0;
+}
