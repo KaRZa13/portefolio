@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.title {
     width: 100vw;
     height: 100vh;
     position: relative;

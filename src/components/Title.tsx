@@ -5,11 +5,9 @@ const Title = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="title">
         <div className="green-rect">
-          <div className="title">
-            <h1>{ name }</h1>
-          </div>
+          <div><h1>{ name }</h1></div>
         </div>
       </div>
     </>

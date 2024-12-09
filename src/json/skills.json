@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML",
+    "src": "./src/assets/html-logo.png"
+  },
+  {
+    "name": "CSS",
+    "src": "./src/assets/css-logo.png"
+  },
+  {
+    "name": "JAVASCRIPT",
+    "src": "./src/assets/js-logo.png"
+  },
+  {
+    "name": "TYPESCRIPT",
+    "src": "./src/assets/ts-logo.png"
+  },
+  {
+    "name": "REACT",
+    "src": "./src/assets/react-logo.png"
+  },
+  {
+    "name": "VUEJS",
+    "src": "./src/assets/vue-logo.png"
+  },
+  {
+    "name": "NODE",
+    "src": "./src/assets/node-logo.png"
+  },
+  {
+    "name": "PYTHON",
+    "src": "./src/assets/python-logo.png"
+  },
+  {
+    "name": "PHP",
+    "src": "./src/assets/php-logo.png"
+  },
+  {
+    "name": "SYMFONY",
+    "src": "./src/assets/symfony-logo.png"
+  },
+  {
+    "name": "MYSQL",
+    "src": "./src/assets/sql-logo.png"
+  },
+  {
+    "name": "GIT",
+    "src": "./src/assets/git-logo.png"
+  }
+]
