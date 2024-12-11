@@ -12,9 +12,9 @@ const Skills = () => {
         <h1>Mes compétences</h1>
         <div className="cards">
           {skills.map((skill, index) => (
-            <Tilt key={index} tiltMaxAngleX={maxAngle} tiltMaxAngleY={maxAngle}>
+            //  <Tilt key={index} tiltMaxAngleX={maxAngle} tiltMaxAngleY={maxAngle}>
               <Card name={skill.name} src={skill.src}/>
-            </Tilt>
+            //  </Tilt>
           ))}
         </div>
       </div>

@@ -15,12 +15,22 @@
   height: 100vh;
   gap: 5rem;
 }
+.skills h1 {
+  font-size: 3rem;
+}
 
 .cards {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  max-height: 100%;
-  max-width: 60%;
+  max-height: 75%;
+  max-width: 75%;
+}
+
+/*  */
+@media (max-width: 1024px) and (min-width: 768px) {
+  
 }
