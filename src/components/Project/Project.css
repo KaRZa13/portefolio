@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-.project {
+.projects {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  background-color: aqua;
 }

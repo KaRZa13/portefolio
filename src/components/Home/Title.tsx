@@ -1,4 +1,4 @@
-import './styles/title.css'
+import './title.css'
 
 const Title = () => {
   const name = 'Rafael MURO'
