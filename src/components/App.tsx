@@ -1,29 +1,23 @@
-import Title from '../Home/Title'
-import Profil from '../Profil/Profil'
-import Skills from '../Skills/Skills'
-// import Project from '../Project/Project'
-
-import './App.css'
-
-
 import { ReactLenis } from 'lenis/react'
 
-
+import Home from './Home'
+import Profil from './Profil'
+import Skills from './Skills'
+// import Projects from './Project'
 
 const App = () => {
 
-
   return (
-    <>
+    <div className='font-black text-lg italic bg-background'>
       <ReactLenis root options={{smoothWheel: true, orientation: 'vertical'}}>
-        <Title />
+        <Home />
         <Profil />
         <Skills />
       </ReactLenis>
       {/* <ReactLenis root options={{smoothWheel: true, orientation: 'horizontal'}}>
         <Project />
       </ReactLenis> */}
-    </>
+    </div>
   )
 }
 
