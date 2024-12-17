@@ -3,12 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      'background': '#F3E9D1',
-      'blue': '#00ffff',
-      'green': '#98FB98',
       'black': '#000',
       'white': '#fff',
-      'border': '#e0ebeb'
+      'background': '#ccdcf8',
+      'primary': '#2e2343',
+      'secondary': '#3e27a5',
+      'tertiary': '#816ddd',
+      'quaternary': '#1b1427',
     },
     
     fontFamily: {

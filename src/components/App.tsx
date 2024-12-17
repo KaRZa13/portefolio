@@ -8,7 +8,7 @@ import Skills from './Skills'
 const App = () => {
 
   return (
-    <div className='font-black text-lg italic bg-background'>
+    <div className='font-black text-quaternary text-lg italic bg-background'>
       <ReactLenis root options={{smoothWheel: true, orientation: 'vertical'}}>
         <Home />
         <Profil />
