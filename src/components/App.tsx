@@ -1,5 +1,6 @@
 import { ReactLenis } from 'lenis/react'
 
+import MyThree from './Three'
 import Home from './Home'
 import Profil from './Profil'
 import Skills from './Skills'
@@ -13,6 +14,7 @@ const App = () => {
         <Home />
         <Profil />
         <Skills />
+        <MyThree/>
       </ReactLenis>
       {/* <ReactLenis root options={{smoothWheel: true, orientation: 'horizontal'}}>
         <Project />
