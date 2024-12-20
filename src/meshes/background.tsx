@@ -4,6 +4,7 @@ import vertex from '../shaders/grid/vertex.glsl'
 
 const CreateBackground = () => {
   const geometry = new THREE.SphereGeometry(10, 10, 10)
+  
   // const material = new THREE.MeshBasicMaterial({
   //   color: 0xff00ff,
   //   side: THREE.DoubleSide,
@@ -15,6 +16,8 @@ const CreateBackground = () => {
     uniforms: {
       uGridSize: { value: 20.0 },
     },
+    wireframe: true,
+    side: THREE.DoubleSide,
     vertexShader: vertex,
     fragmentShader: fragment
   })
