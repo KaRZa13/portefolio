@@ -37,7 +37,7 @@ const MyThree: React.FC = () => {
 
     camera.position.z = 5
 
-    const orbits = new OrbitControls(camera, renderer.domElement)
+    new OrbitControls(camera, renderer.domElement)
 
     const animate = () => {
       cube.rotation.x += 0.01
