@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import fragment from '../shaders/grid/fragment.glsl'
 import vertex from '../shaders/grid/vertex.glsl'
 
-const createBackground = () => {
+const Background = () => {
   const geometry = new THREE.SphereGeometry(10, 40, 40)
 
   const material = new THREE.ShaderMaterial({
@@ -15,9 +15,11 @@ const createBackground = () => {
     fragmentShader: fragment
   })
 
-  const mesh = new THREE.Mesh(geometry, material)
-
-  return mesh
+  return (
+    <>
+      <mesh geometry={geometry} material={material}/>
+    </>
+  )
 }
 
-export default createBackground
+export default Background

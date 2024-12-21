@@ -11,8 +11,6 @@ const Skills = () => {
       <div className='w-screen h-screen flex flex-col justify-around items-center'>
         <div><h1 className='text-9xl uppercase'>Mes compétences</h1></div>
 
-
-
         <div className='w-full h-full max-w-screen-xl max-h-screen grid grid-cols-4 gap-6 p-4 overflow-auto'>
           {skills.map((skill, index) => (
 
