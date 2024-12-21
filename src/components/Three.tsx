@@ -2,7 +2,9 @@ import * as THREE from 'three'
 import { useEffect, useRef } from 'react'
 import { OrbitControls } from 'three/examples/jsm/Addons.js'
 
-import CreateBackground from '../meshes/background'
+import addText from '../meshes/text'
+import createKnot from '../meshes/knot'
+import createBackground from '../meshes/background'
 
 const MyThree: React.FC = () => {
   const refContainer = useRef<HTMLDivElement | null>(null)
@@ -22,10 +24,14 @@ const MyThree: React.FC = () => {
     refContainer.current.appendChild(renderer.domElement)
 
     const geometry = new THREE.BoxGeometry(1, 1, 1)
-    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+    const material = new THREE.MeshBasicMaterial({ color: 0xff0000, wireframe: true })
     const cube = new THREE.Mesh(geometry, material)
-    const background = CreateBackground()
+    const background = createBackground()
+    // const knot = createKnot()
 
+    addText('RAFAEL MURO', scene)
+
+    // scene.add(knot)
     scene.add(background)
     scene.add(cube)
 

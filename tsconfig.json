@@ -7,5 +7,6 @@
   "compilerOptions": {
     "typeRoots": ["./node_modules/@types", "./src"],
     "types": ["vite-plugin-glsl/ext"]
-  }
+  },
+  // "include": ["src", "glsl.d.ts"]
 }
