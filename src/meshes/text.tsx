@@ -23,7 +23,7 @@ const Text: React.FC<TextProps> = ({ text }: TextProps) => {
       })
       textGeometry.computeBoundingBox()
 
-      const textMaterial = new MeshBasicMaterial({color: 0x000000})
+      const textMaterial = new MeshBasicMaterial({color: 0xffffff})
 
       const newMesh = new Mesh(textGeometry, textMaterial)
 
