@@ -3,7 +3,7 @@ const Profil = () => {
 
   return (
     <>
-      <div className='w-screen h-screen flex justify-center items-center pr-8 pl-8'>
+      <div className='w-screen h-screen flex justify-center items-center pr-8 pl-8 bg-gray'>
         <div className='flex justify-around items-center'>
           <div className='w-6/12'>
             <img className='rounded-full' src='https://media.licdn.com/dms/image/v2/D4E03AQF2oOv-Lzu6fQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728974577742?e=1738800000&v=beta&t=8XbepVTnbFm1vOhY-gkmJGKcrdRcjWoNOfEqYuoSudI' alt='photo'/>

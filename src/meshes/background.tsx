@@ -3,7 +3,7 @@ import fragment from '../shaders/grid/fragment.glsl'
 import vertex from '../shaders/grid/vertex.glsl'
 
 const Background = () => {
-  const geometry = new THREE.SphereGeometry(15, 64, 32)
+  const geometry = new THREE.SphereGeometry(10, 64, 32)
   
 
   const material = new THREE.ShaderMaterial({
@@ -15,8 +15,6 @@ const Background = () => {
     vertexShader: vertex,
     fragmentShader: fragment
   })
-
-
 
   return (
     <>

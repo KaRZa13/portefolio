@@ -23,7 +23,7 @@ const Text: React.FC<TextProps> = ({ text }: TextProps) => {
       })
       textGeometry.computeBoundingBox()
 
-      const textMaterial = new MeshBasicMaterial({color: 0xffffff})
+      const textMaterial = new MeshBasicMaterial({color: 0x000000})
 
       const newMesh = new Mesh(textGeometry, textMaterial)
 
@@ -34,7 +34,7 @@ const Text: React.FC<TextProps> = ({ text }: TextProps) => {
         newMesh.position.set(
           (-textGeometry.boundingBox.max.x / 2) * scale,
           (-textGeometry.boundingBox.max.y / 2) * scale,
-          -6
+          -4
         )
       } else {
         console.error('Bounding box is null')

@@ -13,7 +13,6 @@ import vertex from '../shaders/icosahedron/vertex.glsl'
 const Icosahedron = () => {
   const mesh = useRef<THREE.Mesh | null>(null)
 
-  // This is our main render target where we'll render and store the scene as a texture
   const mainRenderTarget = useFBO()
 
   const {
@@ -31,7 +30,7 @@ const Icosahedron = () => {
     }),
     saturation: { value: 1.06, min: 1, max: 1.25, step: 0.01 },
     chromaticAberration: {
-      value: 0.5,
+      value: 0.25,
       min: 0,
       max: 1.5,
       step: 0.01,
@@ -43,6 +42,7 @@ const Icosahedron = () => {
       step: 0.01,
     },
   })
+
 
   const uniforms = useMemo(() => ({
     uTexture: {value: null},
@@ -66,6 +66,9 @@ const Icosahedron = () => {
       mesh.current.visible = false
       gl.setRenderTarget(mainRenderTarget)
       gl.render(scene, camera)
+      mesh.current.rotation.x += 0.01
+      mesh.current.rotation.y += 0.01
+      mesh.current.rotation.z += 0.01
   
       if (mesh.current.material instanceof THREE.ShaderMaterial) {
         mesh.current.material.uniforms.uTexture.value = mainRenderTarget.texture
@@ -86,7 +89,7 @@ const Icosahedron = () => {
   return (
     <>
       <mesh ref={mesh}>
-        <icosahedronGeometry args={[1.25]} />
+        <icosahedronGeometry args={[1.5]} />
         <shaderMaterial
           key={uuidv4()}
           vertexShader={vertex}
